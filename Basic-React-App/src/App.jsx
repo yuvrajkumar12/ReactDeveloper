@@ -1,11 +1,14 @@
 import "./App.css";
-import ProductTab from "./ProductTab.jsx";
-import Poxmsg from "./Poxmsg.jsx";
+import Producttab from "./ProductTab.jsx";
+import Buttom1 from "./buttom1";
+import Form from "./Form";
 function App(){
   return (
     <div>
-      <ProductTab/>
-      <Poxmsg/>
+    <h2>Blockbuster Deals | Shop Now</h2>
+     <Producttab/>
+     <Buttom1/>
+     <Form/>
     </div>
   );
 }
