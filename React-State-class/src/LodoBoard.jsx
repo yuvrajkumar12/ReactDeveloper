@@ -1,10 +1,17 @@
 import { useState } from "react";
 export default function loduBoard(){
     let [move,setMove]=useState({Blue:0,Yellow:0,Green:0,Red:0});
+    let [arr,SetArr]=useState(["no Move"]);
     let updateblue=()=>{
+        arr.push("Blue");
+        SetArr(arr);
         move.Blue+=1;
         setMove({...move});
-    };
+    }
+    // let updateblue=()=>{
+    //     move.Blue+=1;
+    //     setMove({...move});
+    // };
     let updateyellow=()=>{
         move.Yellow+=1;
         setMove({...move});
@@ -20,6 +27,7 @@ export default function loduBoard(){
     return(
         <div>
             <h1>Lodo Board</h1>
+            <p>{arr}</p>
             <div className="board">
             <p>Blue Move={move.Blue}</p>
             <button style={{backgroundColor:"blue"}} onClick={updateblue}>+1</button>
