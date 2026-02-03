@@ -21,7 +21,7 @@ function Todo(){
     }
 
     const onTTodoCheckChange=(id)=>{
-        const updatedTodoList=todoList.map(todo=>todo.id==id?{...todo, isCompleted:!todo.isCompleted}:todo);
+        const updatedTodoList=todoList.map(todo=> todo.id==id?{...todo, isCompleted:!todo.isCompleted}:todo);
         console.log(updatedTodoList);
         setTodoList(updatedTodoList);
     }

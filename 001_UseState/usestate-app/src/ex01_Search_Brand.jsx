@@ -32,7 +32,6 @@ function ex01_Search_Brand() {
 
   return (
     <>
-      {/* ✅ FIX 2: onClick → onChange */}
       <input
         onChange={onchangeSearch}
         placeholder="Search a brand"
