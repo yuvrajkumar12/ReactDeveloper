@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-    <clinerfun/>
+      <clinerfun/>
       <button onClick={()=>setcount(count+1)}>Click-{count}</button>
       {
         products && products.length>0 && products.map(product=><p>{product.title}</p>)
