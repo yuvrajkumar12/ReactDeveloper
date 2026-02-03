@@ -3,6 +3,8 @@ import "./App.css";
 import UpdateObject from "./UpdateObject";
 import Ex01_Search_Brand from "./ex01_Search_Brand";
 import Addthecart from "./Addthecart";
+import Todo from "./Todo";
+import UseRefHook from "./useRefHook";
 
 
 const Increment = ({ count, setcount }) => {
@@ -33,6 +35,8 @@ function App() {
       <UpdateObject />
       <Ex01_Search_Brand/>
       <Addthecart/>
+      <Todo/>
+      <UseRefHook/>
     </>
   );
 }
