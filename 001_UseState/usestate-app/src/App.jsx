@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import UpdateObject from "./UpdateObject";
 import Ex01_Search_Brand from "./ex01_Search_Brand";
+import Addthecart from "./Addthecart";
+
 
 const Increment = ({ count, setcount }) => {
   return (
@@ -30,6 +32,7 @@ function App() {
 
       <UpdateObject />
       <Ex01_Search_Brand/>
+      <Addthecart/>
     </>
   );
 }
