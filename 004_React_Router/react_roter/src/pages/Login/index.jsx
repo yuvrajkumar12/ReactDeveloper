@@ -2,7 +2,7 @@ import { useAuth } from "../../context/auth-context";
 export const Login = () => {
     const { isLoggedIn ,setIsLoggedIn}=useAuth()
     const onLoginClick=()=>{
-        setIsLoggedIn((prev) => !prev)
+        setIsLoggedIn(!isLoggedIn)
 
     }
     return (
